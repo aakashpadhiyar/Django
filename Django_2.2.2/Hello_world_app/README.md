@@ -13,10 +13,10 @@ It’ll consist of two parts:
     A public site that lets people view polls and vote in them.
     An admin site that lets you add, change, and delete polls.
 
-We’ll assume you have Django installed already. You can tell Django is installed and which version by running the following command in a shell prompt (indicated by the $ prefix):
+We’ll assume you have Django installed already. You can tell Django is installed and which version by running the following command in a shell prompt (indicated by the         $ prefix):
 / 
 
-$ python -m django --version
+        $ python -m django --version
 
 If Django is installed, you should see the version of your installation. If it isn’t, you’ll get an error telling “No module named django”.
 
@@ -34,7 +34,7 @@ If this is your first time using Django, you’ll have to take care of some init
 From the command line, cd into a directory where you’d like to store your code, then run the following command:
 / 
 
-$ django-admin startproject mysite
+        $ django-admin startproject mysite
 
 This will create a mysite directory in your current directory. If it didn’t work, see Problems running django-admin.
 
@@ -73,7 +73,7 @@ The development server¶
 Let’s verify your Django project works. Change into the outer mysite directory, if you haven’t already, and run the following commands:
 / 
 
-$ python manage.py runserver
+        $ python manage.py runserver
 
 You’ll see the following output on the command line:
 
@@ -106,12 +106,12 @@ By default, the runserver command starts the development server on the internal 
 If you want to change the server’s port, pass it as a command-line argument. For instance, this command starts the server on port 8080:
 / 
 
-$ python manage.py runserver 8080
+        $ python manage.py runserver 8080
 
 If you want to change the server’s IP, pass it along with the port. For example, to listen on all available public IPs (which is useful if you are running Vagrant or want to show off your work on other computers on the network), use:
 / 
 
-$ python manage.py runserver 0:8000
+        $ python manage.py runserver 0:8000
 
 0 is a shortcut for 0.0.0.0. Full docs for the development server can be found in the runserver reference.
 
@@ -133,7 +133,7 @@ Your apps can live anywhere on your Python path. In this tutorial, we’ll creat
 To create your app, make sure you’re in the same directory as manage.py and type this command:
 / 
 
-$ python manage.py startapp polls
+        $ python manage.py startapp polls
 
 That’ll create a directory polls, which is laid out like this:
 
@@ -207,7 +207,7 @@ You should always use include() when you include other URL patterns. admin.site.
 You have now wired an index view into the URLconf. Verify it’s working with the following command:
 / 
 
-$ python manage.py runserver
+        $ python manage.py runserver
 
 Go to http://localhost:8000/polls/ in your browser, and you should see the text “Hello, world. You’re at the polls index.”, which you defined in the index view.
 
